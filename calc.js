@@ -1,5 +1,9 @@
 "use strict";
 
+const calculatingResult = calculate('VI * V');
+
+console.log(calculatingResult);
+
 function calculate(string) {
     let romans = Array(10)
     romans[0] = "I"
@@ -122,7 +126,3 @@ function romanize(num) {
 
     return Array(+digits.join("") + 1).join("M") + roman
 }
-
-const calculatingResult = calculate('VI * V')
-
-console.log(calculatingResult)
